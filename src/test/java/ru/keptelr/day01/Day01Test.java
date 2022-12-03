@@ -1,5 +1,25 @@
 package ru.keptelr.day01;
 
+import java.util.List;
+
+import org.junit.Assert;
+import org.junit.Test;
+
+import ru.keptelr.utils.InputParserUtil;
+
 public class Day01Test {
-    //TODO
+
+    @Test
+    public void testPartOne() {
+        List<String> input = InputParserUtil.readFile("day01");
+        Day01 day01 = new Day01();
+        Assert.assertEquals(0, day01.partOne(input));
+    }
+
+    @Test
+    public void testPartTwo() {
+        List<String> input = InputParserUtil.readFile("day01");
+        Day01 day01 = new Day01();
+        Assert.assertEquals(0, day01.partTwo(input));
+    }
 }
