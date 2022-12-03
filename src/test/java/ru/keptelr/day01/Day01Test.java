@@ -11,15 +11,15 @@ public class Day01Test {
 
     @Test
     public void testPartOne() {
-        List<String> input = InputParserUtil.readFile("day01");
         Day01 day01 = new Day01();
-        Assert.assertEquals(0, day01.partOne(input));
+        Assert.assertEquals(5, day01.partOne(List.of("R2, L3")));
+        Assert.assertEquals(2, day01.partOne(List.of("R2, R2, R2")));
+        Assert.assertEquals(12, day01.partOne(List.of("R5, L5, R5, R3")));
     }
 
     @Test
     public void testPartTwo() {
-        List<String> input = InputParserUtil.readFile("day01");
         Day01 day01 = new Day01();
-        Assert.assertEquals(0, day01.partTwo(input));
+        Assert.assertEquals(4, day01.partTwo(List.of("R8, R4, R4, R8")));
     }
 }
